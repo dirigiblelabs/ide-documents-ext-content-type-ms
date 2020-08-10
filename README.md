@@ -5,7 +5,9 @@
 
 ## Overview
 
-IDE Documents extension for MS (*.pptx, *.docx, *.xlsx, ...) content types
+IDE Documents extension for MS (\*.pptx, \*.docx, \*.xlsx, ...) content types
+
+> **Note:** The extension can be enabled via the environment variable `DIRIGIBLE_DOCUMENTS_EXT_CONTENT_TYPE_MS_ENABLED`
 
 
 ## License
