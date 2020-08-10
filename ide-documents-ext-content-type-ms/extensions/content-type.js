@@ -3,7 +3,7 @@ var config = require("core/v4/configurations");
 var DIRIGIBLE_DOCUMENTS_EXT_CONTENT_TYPE_MS_ENABLED = "DIRIGIBLE_DOCUMENTS_EXT_CONTENT_TYPE_MS_ENABLED";
 
 function getContentType(fileName, contentType) {
-	let enabled = JSON.parse(config.get(DIRIGIBLE_DOCUMENTS_EXT_CONTENT_TYPE_MS_ENABLED));
+	let enabled = JSON.parse(config.get(DIRIGIBLE_DOCUMENTS_EXT_CONTENT_TYPE_MS_ENABLED, "false"));
 	if (enabled && typeof enabled === "boolean") {
 		if (fileName.endsWith(".pptx")) {
 			return "application/vnd.ms-powerpoint";
